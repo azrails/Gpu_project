@@ -8,8 +8,14 @@ dependencies = [
     "ipykernel>=6.29.5",
     "matplotlib>=3.10.1",
     "numpy>=2.2.4",
+    "pybind11>=2.13.6",
     "torch>=2.6.0",
 ]
+
+[build-system]
+requires = ["scikit-build-core", "cmake", "pybind11"]
+build-backend = "scikit_build_core.build"
+
 
 [project.optional-dependencies]
 cpu = [
